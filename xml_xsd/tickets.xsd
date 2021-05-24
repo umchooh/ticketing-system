@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="tickets">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="ticket"  minOccurs="0" maxOccurs="unbounded">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="ticketId" type="xs:positiveInteger" />
+                            <xs:element name="status" type="statusType" />
+                            <xs:element name="operationDate">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="open" type="xs:dateTime" />
+                                        <xs:element name="close" type="xs:dateTime" minOccurs="0" />
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element name="clientId" type="xs:positiveInteger"/>
+                            <xs:element name="category" type="xs:string" />
+                            <xs:element name="subject" type="xs:string" />
+                            <xs:element name="messages">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="message" maxOccurs="unbounded">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                    <xs:element name="userId" type="xs:positiveInteger" />
+                                                    <xs:element name="dateTime" type="xs:dateTime" />
+                                                    <xs:element name="content" type="xs:string" />
+                                                    <xs:element name="attachment" type="fileExtensions" minOccurs="0" maxOccurs="unbounded" />
+                                                </xs:sequence>
+                                            </xs:complexType>
+                                        </xs:element>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:simpleType name="statusType">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="New" />
+            <xs:enumeration value="Review" />
+            <xs:enumeration value="On hold" />
+            <xs:enumeration value="Completed" />
+            <xs:enumeration value="Closed" />
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="fileExtensions">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="(.)+\.(jpg|jpeg|bmp|png|gif|tiff|psd|pdf)" />
+        </xs:restriction>
+    </xs:simpleType>
+</xs:schema>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<users xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:noNamespaceSchemaLocation="users.xsd">
+    <user>
+        <userType>staff</userType>
+        <userId>1</userId>
+        <password>1f3870be274f6c49b3e31a0c6728957f</password><!--apple-->
+        <name>
+            <first>Jason</first>
+            <last>Jackson</last>
+        </name>
+        <email>jayson@test.ca</email>
+        <phoneNum>(222)455-5454</phoneNum>
+        <address>
+            <line1>1 Scott Street</line1>
+            <city>Toronto</city>
+            <province>ON</province>
+            <postalCode>M5E 1A1</postalCode>
+        </address>
+        <staffInformation>
+            <startDate>2021-02-02</startDate>
+            <position>Customer Services Support</position>
+            <image>jason-jackson.jpg</image>
+        </staffInformation>
+    </user>
+    <user>
+        <userType>staff</userType>
+        <userId>2</userId>
+        <password>5076e33378db3b35c88d9189851ed3bf</password><!--berry-->
+        <name>
+            <first>Elizabeth</first>
+            <last>Lindsay</last>
+        </name>
+        <email>elizabeth@test.ca</email>
+        <phoneNum>(222)599-6975</phoneNum>
+        <address>
+            <line1>147 Danfort Avenue</line1>
+            <city>Toronto</city>
+            <province>ON</province>
+            <postalCode>M4K 1N2</postalCode>
+        </address>
+        <staffInformation>
+            <startDate>2020-02-02</startDate>
+            <position>IT Support Service</position>
+            <image>elizabeth-lindsay.jpg</image>
+        </staffInformation>
+    </user>
+    <user>
+        <userType>client</userType>
+        <userId>3</userId>
+        <password>3f206bd2d4fb8b6fbef3e79e1f6c3964</password><!--wine-->
+        <name>
+            <first>Jamie</first>
+            <last>Potter</last>
+        </name>
+        <email>jamie@test.ca</email>
+        <phoneNum>(641)555-2222</phoneNum>
+        <address>
+            <line1>1101 Pharmacy Avenue</line1>
+            <line2>#304</line2>
+            <city>Toronto</city>
+            <province>ON</province>
+            <postalCode>M1R 2H2</postalCode>
+        </address>
+    </user>
+    <user>
+        <userType>client</userType>
+        <userId>4</userId>
+        <password>3e1867f5aee83045775fbe355e6a3ce1</password><!--beer-->
+        <name>
+            <first>King</first>
+            <last>Sam</last>
+        </name>
+        <email>king@test.ca</email>
+        <phoneNum>(641)555-7558</phoneNum>
+        <address>
+            <line1>42 Glencrest Blvd</line1>
+            <city>Toronto</city>
+            <province>ON</province>
+            <postalCode>M4B 1L4</postalCode>
+        </address>
+    </user>
+</users>

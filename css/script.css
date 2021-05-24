@@ -1,0 +1,55 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css");
+
+html {
+    position: relative;
+    font-size: 20px;
+    min-height: 100%;
+}
+
+.hidden {
+    display: none;
+}
+a {
+    text-decoration: none;
+
+}
+a, a:active, a:focus {
+    outline: none;
+}
+a:hover {
+    color:black;
+    font-weight: bold;
+}
+h1 {
+    font-size: 2.5em;
+}
+.bg {
+    background-image: url('../images/israel-andrade-YI_9SivVt_s-unsplash.jpg');
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: opacity(75%);
+    content: " ";
+
+}
+.index-text {
+    font-size:2.5em;
+}
+.modal-header {
+    justify-content: center;
+}
+
+/*footer*/
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+}
+/*
+*Image References:
+*Photo by <a href="https://unsplash.com/@israelandrxde?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Israel Andrade</a> on <a href="https://unsplash.com/s/photos/office?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+*Reference For CSS:
+* Learn about filter functionality: https://www.sitepoint.com/css-filter-effects-blur-grayscale-brightness-and-more-in-css/
+*/

@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tickets xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="tickets.xsd">
+  <ticket>
+    <ticketId>1</ticketId>
+    <status>Review</status>
+    <operationDate>
+      <open>2020-05-30T09:00:00</open>
+      <close>2002-07-30T14:00:00</close>
+    </operationDate>
+    <clientId>3</clientId>
+    <!--Customer file complaint, using their UserID-->
+    <category>General Inquiries</category>
+    <subject>Looking for better phone plan</subject>
+    <messages>
+      <message>
+        <userId>1</userId>
+        <dateTime>2020-05-30T09:01:00</dateTime>
+        <content>Hi Jamie, how are you? My name is Jason.How May I help you today?</content>
+      </message>
+      <message>
+        <userId>3</userId>
+        <dateTime>2020-05-30T09:02:00</dateTime>
+        <content>I am looking to find will you able to offer me a better deal</content>
+      </message>
+      <message>
+        <userId>1</userId>
+        <dateTime>2020-05-30T09:02:00</dateTime>
+        <content>I have attach a phone plan. Take a moment to read and let me know if you have any questions.
+                </content>
+        <attachment>phone-plan-may-2020.pdf</attachment>
+      </message>
+      <message>
+        <userId>3</userId>
+        <dateTime>2020-05-30T09:04:00</dateTime>
+        <content>Thank you for your service, I will get back to you after reviewing it. Bye.</content>
+      </message>
+    </messages>
+  </ticket>
+  <ticket>
+    <ticketId>2</ticketId>
+    <status>Review</status>
+    <operationDate>
+      <open>2020-12-30T11:00:00</open>
+    </operationDate>
+    <clientId>4</clientId>
+    <category>Technical Issues</category>
+    <subject>On/Off button is not working</subject>
+    <messages>
+      <message>
+        <userId>4</userId>
+        <dateTime>2020-12-30T11:00:00</dateTime>
+        <content>Hi there, I am having issue with my phone where the on/off button is flat with he phone case.
+                    My phone model is S-52G.
+                </content>
+        <attachment>phone.jpg</attachment>
+      </message>
+      <message>
+        <userId>1</userId>
+        <dateTime>2020-12-30T11:05:00</dateTime>
+        <content>Sorry to hear about that. I will proceed your request, please read the instruction and fill up
+                    the form and get back to me.
+                </content>
+        <attachment>return-instruction.pdf</attachment>
+        <attachment>return-form.pdf</attachment>
+      </message>
+      <message>
+        <userId>4</userId>
+        <dateTime>2020-12-30T11:20:00</dateTime>
+        <content>Thank you for your service. I will do my return as soon as possible.</content>
+      </message>
+      <message>
+        <userId>4</userId>
+        <dateTime>2021-03-31T02:45:07</dateTime>
+        <content>bye</content>
+      </message>
+      <message>
+        <userId>4</userId>
+        <dateTime>2021-03-31T02:45:26</dateTime>
+        <content>bye</content>
+      </message>
+      <message>
+        <userId>2</userId>
+        <dateTime>2021-05-21T04:52:57</dateTime>
+        <content>ok</content>
+      </message>
+    </messages>
+  </ticket>
+  <ticket>
+    <ticketId>3</ticketId>
+    <status>Review</status>
+    <operationDate>
+      <open>2020-12-30T11:00:00</open>
+    </operationDate>
+    <clientId>3</clientId>
+    <category>Technical Issues</category>
+    <subject>Screen blackout</subject>
+    <messages>
+      <message>
+        <userId>3</userId>
+        <dateTime>2020-12-30T11:00:00</dateTime>
+        <content>Hi there, I am having issue with my phone where the on/off button is flat with he phone case.
+                    My phone model is S-52G.
+                </content>
+        <attachment>phone.jpg</attachment>
+      </message>
+      <message>
+        <userId>1</userId>
+        <dateTime>2020-12-30T11:05:00</dateTime>
+        <content>Sorry to hear about that. I will proceed your request, please read the instruction and fill up
+                    the form and get back to me.
+                </content>
+        <attachment>return-instruction.pdf</attachment>
+        <attachment>return-form.pdf</attachment>
+      </message>
+      <message>
+        <userId>3</userId>
+        <dateTime>2020-12-30T11:20:00</dateTime>
+        <content>Thank you for your service. I will do my return as soon as possible.</content>
+      </message>
+      <message>
+        <userId>3</userId>
+        <dateTime>2021-04-05T03:56:22</dateTime>
+        <content>Have a great day. </content>
+      </message>
+      <message>
+        <userId>1</userId>
+        <dateTime>2021-04-05T03:57:19</dateTime>
+        <content>Thank you </content>
+      </message>
+    </messages>
+  </ticket>
+</tickets>

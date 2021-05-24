@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="users">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="user" minOccurs="0" maxOccurs="unbounded">
+                   <xs:complexType>
+                       <xs:sequence>
+                           <xs:element name="userType" />
+                           <xs:element name="userId" type="xs:positiveInteger" />
+                           <xs:element name="password" type="xs:string" />
+                           <xs:element name="name" maxOccurs="unbounded">
+                               <xs:complexType>
+                                   <xs:sequence>
+                                       <xs:element name="first" type="xs:string" />
+                                       <xs:element name="last" type="xs:string" />
+                                   </xs:sequence>
+                               </xs:complexType>
+                           </xs:element>
+                           <xs:element name="email" type="emailType" />
+                           <xs:element name="phoneNum" type="phoneType" />
+                           <xs:element name="address">
+                               <xs:complexType>
+                                   <xs:sequence>
+                                       <xs:element name="line1" type="xs:string" />
+                                       <xs:element name="line2" type="xs:string" minOccurs="0" />
+                                       <xs:element name="city" />
+                                       <xs:element name="province" type="provinceType" />
+                                       <xs:element name="postalCode" type="postalType" />
+                                   </xs:sequence>
+                               </xs:complexType>
+                           </xs:element>
+                           <xs:element name="staffInformation" minOccurs="0">
+                               <xs:complexType>
+                                   <xs:sequence>
+                                       <xs:element name="startDate" type="xs:date" />
+                                       <xs:element name="position" type="xs:string" />
+                                       <xs:element name="image" type="fileExtensions" />
+                                   </xs:sequence>
+                               </xs:complexType>
+                           </xs:element>
+                       </xs:sequence>
+                   </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:simpleType name="emailType">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="([0-9a-zA-Z]([-.\w]*[0-9a-zA-Z])*@([0-9a-zA-Z][-\w]*[0-9a-zA-Z]\.)+[a-zA-Z]{2,9})" />
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="phoneType">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="\([0-9]{3}\)[0-9]{3}-[0-9]{4}" />
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="provinceType">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="NL" />
+            <xs:enumeration value="PE" />
+            <xs:enumeration value="NS" />
+            <xs:enumeration value="NB" />
+            <xs:enumeration value="QC" />
+            <xs:enumeration value="ON" />
+            <xs:enumeration value="MB" />
+            <xs:enumeration value="SK" />
+            <xs:enumeration value="AB" />
+            <xs:enumeration value="BC" />
+            <xs:enumeration value="YT" />
+            <xs:enumeration value="NT" />
+            <xs:enumeration value="NU" />
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="postalType">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="[a-zA-Z][0-9][a-zA-Z] [0-9][a-zA-Z][0-9]" />
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="fileExtensions">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="(.)+\.(|jpg|jpeg|bmp|png|gif|tiff|psd)" />
+        </xs:restriction>
+    </xs:simpleType>
+</xs:schema>
