@@ -2,7 +2,7 @@
 <tickets xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="tickets.xsd">
   <ticket>
     <ticketId>1</ticketId>
-    <status>Review</status>
+    <status>On hold</status>
     <operationDate>
       <open>2020-05-30T09:00:00</open>
       <close>2002-07-30T14:00:00</close>
@@ -38,7 +38,7 @@
   </ticket>
   <ticket>
     <ticketId>2</ticketId>
-    <status>Review</status>
+    <status>Closed</status>
     <operationDate>
       <open>2020-12-30T11:00:00</open>
     </operationDate>

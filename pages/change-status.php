@@ -1,6 +1,6 @@
 <?php
 session_start();
-//Gather the infromation collected from the form and Session
+//Gather the information collected from the form and Session
 $ticketId = $_POST['ticketId'];
 $userId = $_SESSION['userId'];
 //Format the Timestamp to match the dateTime data type
@@ -30,7 +30,7 @@ foreach ($ticketsElement->childNodes as $element) {
 if ($ticket !== null) {
     //Locate the current ticket's status
     $currentStatus = $ticket->getElementsByTagName("status")->item(0);
-    //Ovveride the value with the new status gather from the form
+    //Overide the value with the new status gather from the form
     $currentStatus->nodeValue = $statusType;
 
     $xmlDoc->save("../xml_xsd/tickets.xml");

@@ -5,6 +5,6 @@ setcookie(session_name(), '', 100);
 // Clear session data and destroy it, then redirect user to the login page
 session_unset();
 session_destroy();
-header('Location: index.php');
+header('Location: ../index.php');
 exit();
 ?>
